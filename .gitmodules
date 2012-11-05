@@ -1,0 +1,9 @@
+[submodule "vim-web-indent"]
+	path = vim-web-indent
+	url = ./bundle/vim-web-indent/
+[submodule "command-t"]
+	path = command-t
+	url = ./bundle/command-t/
+[submodule "syntastic"]
+	path = syntastic
+	url = ./bundle/syntastic/
