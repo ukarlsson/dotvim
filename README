@@ -1,1 +1,14 @@
 My .vim directory.
+
+Install by:
+
+git clone http://github.com/ukarlsson/dotvim.git ~/.vim
+ln -s $HOME/.vim/vimrc $HOME/.vimrc
+ln -s $HOME/.vim/gvimrc $HOME/.gvimrc
+cd $HOME/.vim
+git submodule init
+git submodule update
+
+See:
+
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
