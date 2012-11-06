@@ -63,3 +63,5 @@ call pathogen#helptags()
 filetype plugin indent on
 
 syntax on
+
+set wildignore+=*.o,*.obj,.git *.swp *.pyc
