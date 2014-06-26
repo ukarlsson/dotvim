@@ -65,3 +65,10 @@ filetype plugin indent on
 syntax on
 
 set wildignore+=*.o,*.obj,.git,*.swp,*.pyc
+
+set t_Co=256
+
+set laststatus=2
+
+set relativenumber
+set number
