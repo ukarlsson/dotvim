@@ -5,13 +5,16 @@ set wildmode=longest,list
 set confirm
 set vb
 set t_vb=
-set backupcopy=no
+set backupcopy=yes
 set title
 set equalalways
 set showbreak=
 set linebreak
 
-set spellfile=~/report-ng/spellfile.UTF-8.add
+set et
+set sw=2
+set sts=2
+set tw=0
 
 nnoremap j gj
 nnoremap k gk
@@ -24,11 +27,8 @@ vnoremap <Up> gk
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk 
 
-nnoremap <silent> <C-t> :CommandT<CR>
-nnoremap <silent> <C-a> :CommandTBuffer<CR>
-
-
-"autocmd BufEnter *			lcd %:p:h
+nnoremap <silent> <C-t> :CtrlP<CR>
+nnoremap <silent> <C-a> :CtrlPBuffer<CR>
 
 autocmd BufRead,BufNewFile *.hs		setlocal sts=2 sw=2 ai tw=78 expandtab formatoptions=crqn comments=:--,sr:{-,mb:-,ex:-}
 autocmd BufRead,BufNewFile *.al		setlocal sts=1 sw=1 ai tw=78 expandtab formatoptions=crqn comments=:--,sr:{-,mb:-,ex:-}
@@ -44,19 +44,7 @@ autocmd BufRead,BufNewFile *.{c,h,cc}	setlocal cindent cino=(0 sts=4 sw=4 et
 autocmd BufRead,BufNewFile *.{pddl,lisp}	setlocal lisp ai sw=1 sts=1 et
 autocmd BufRead,BufNewFile *.{tex}	setlocal spell
 
-"source ~/.unilatex.vim
-
 set noerrorbells
-
-autocmd GUIEnter * set vb t_vb=
-
-"set guifont=MiscFixed\ Semi-Condensed\ 10
-"hi Normal guibg=#ffff55
-"hi SpellBad ctermbg=7
-"
-"
-
-set guifont=Monospace\ 8
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -65,7 +53,7 @@ filetype plugin indent on
 
 syntax on
 
-set wildignore+=*.o,*.obj,.git,*.swp,*.pyc
+set wildignore+=*.o,*.obj,.git,*.swp,*.pyc,*.class
 
 set t_Co=256
 
