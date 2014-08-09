@@ -36,6 +36,7 @@ autocmd BufRead,BufNewFile *.py		setlocal sts=4 sw=4 ai tw=0 et
 autocmd BufRead,BufNewFile *.js		setlocal sts=2 sw=2 tw=0 et ai
 autocmd BufRead,BufNewFile *.html	setlocal sts=2 sw=2 tw=0 et ai
 autocmd BufRead,BufNewFile *.m		setlocal sts=4 sw=4 ai tw=0 et
+autocmd BufRead,BufNewFile *.xml	setlocal sts=2 sw=2 ai tw=0 et
 
 autocmd BufRead,BufNewFile *.java	setlocal cino=j1(0 sts=4 sw=4 et cindent
 
