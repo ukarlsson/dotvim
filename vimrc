@@ -45,6 +45,7 @@ autocmd BufRead,BufNewFile *.{pddl,lisp}	setlocal lisp ai sw=1 sts=1 et
 autocmd BufRead,BufNewFile *.{tex}	setlocal spell
 autocmd BufRead,BufNewFile *.yaml	setlocal noai
 autocmd BufRead,BufNewFile *.{scala,sc}	setlocal filetype=scala
+autocmd BufRead,BufNewFile *.{scala,sc}	setlocal filetype=scala
 
 set noerrorbells
 
@@ -61,7 +62,7 @@ set t_Co=256
 
 set laststatus=2
 
-set relativenumber
-set number
+" set relativenumber
+" set number
 
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java'] }
